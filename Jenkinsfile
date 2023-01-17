@@ -60,7 +60,6 @@ pipeline {
                sh """
                    ${scannerHome}/bin/sonar-scanner 
                    -Dsonar.projectKey=your_project_key_created_in_sonarqube_as_project \
-                   -Dsonar.sources=. \ 
                    -Dsonar.projectName=project-ci \
                    -Dsonar.projectVersion=1.0 \
                    -Dsonar.sources=src/ \
