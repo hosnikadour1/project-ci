@@ -17,8 +17,8 @@ pipeline {
        NEXUSPORT = "8081"
        NEXUS_GRP_REPO = "vpro-maven-group"
        NEXUS_LOGIN = "nexuslogin"
-       SONARSERVER = "Sonarserver"
-       SONARSCANNER = "Sonnarscanner"
+       SONARSERVER = "sonarserver"
+       SONARSCANNER = "sonnarscanner"
 
     }
 	
@@ -50,7 +50,7 @@ pipeline {
 
 
 }
-       stages ('Sonar analysis'){
+       stage ('Sonar analysis'){
         environment {
              scannerHomme = tool "${SONARSCANNER}"
 
